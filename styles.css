@@ -5,9 +5,12 @@
 
 
 
-
+/* Centered the navbar and commented redundant code atm */
 .topnav {
-    
+    /* position: relative; */
+    /* background-color: #333; */
+    /* overflow: hidden;
+    margin: auto; */
 
     display: flex;
     justify-content: center;
@@ -32,7 +35,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #ddd;
+    background-color: rgba(79, 152, 247, 0.363);
     color: black;
 }
 
