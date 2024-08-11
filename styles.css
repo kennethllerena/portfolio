@@ -1,13 +1,22 @@
 /* Add a transparent background color to top of nav bar */
+.centerText {
+    text-align: center;
+}
+
+
+
+
 .topnav {
-    background-color: transparent;
-    overflow: hidden;
+    
+
+    display: flex;
+    justify-content: center;
 
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: left;
+    float: none;
     color: grey;
     text-align: center;
     padding: 14px 16px;
@@ -24,5 +33,28 @@
 /* Add a color to the active/current link */
 .topnav a.active {
     background-color: #ddd;
-    color: white;
+    color: black;
+}
+
+.topnav-centered a{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav-right {
+      float: none;
+      display: block;
+    }
+  
+    .topnav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
 }
