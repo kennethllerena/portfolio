@@ -83,13 +83,17 @@
     }
 }
 
+/* Dropdown is only responsive when it being directly hovered over */
 .dropdown {
     display: inline-block;
 }
+
+/* Make the dropdown vertical  */
 .dropdown a{
     display: block;
 }
 
+/* Dropdown will not display sub links if not hovered over */
 .dropdown .content {
     display: none;
     position: absolute;
@@ -98,6 +102,7 @@
 
 }
 
+/* Display sub links in dropdown when hovered over */
 .dropdown:hover .content {
     display: block;
     background-color:  rgba(167, 166, 166, 0.397);
