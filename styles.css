@@ -9,7 +9,7 @@
     display: flex; */
     /* height: auto; */
     width: auto;
-    border-style: dashed;
+    /* border-style: dashed; */
 }
 
 .jobTitle {
@@ -35,6 +35,7 @@
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 /* Style the links inside the navigation bar */
@@ -81,6 +82,28 @@
       transform: none;
     }
 }
+
+.dropdown {
+    display: inline-block;
+}
+.dropdown a{
+    display: block;
+}
+
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: rgba(167, 166, 166, 0.397);
+    box-shadow: 2px 2px 5px rgba(31, 30, 30, 0.123);
+
+}
+
+.dropdown:hover .content {
+    display: block;
+    background-color:  rgba(167, 166, 166, 0.397);
+}
+
+
 
 .card {
     /* Add shadows to create the card effect */
