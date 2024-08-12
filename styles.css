@@ -1,4 +1,4 @@
-/* Add a transparent background color to top of nav bar */
+
 .centerText {
     text-align: center;
 }
@@ -7,14 +7,15 @@
 
 /* Centered the navbar and commented redundant code atm */
 .topnav {
-    /* position: relative; */
-    /* background-color: #333; */
-    /* overflow: hidden;
-    margin: auto; */
-
     display: flex;
     justify-content: center;
-
+    border: 2px rgba(79, 152, 247, 0.363);
+    border-style: solid;
+    border-radius: 2px;
+    height: fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Style the links inside the navigation bar */
@@ -64,16 +65,39 @@
 
 .card {
     /* Add shadows to create the card effect */
+    border: 2px rgba(79, 152, 247, 0.363); 
+    border-style: solid; /* Needed to make border outline appear */
     box-shadow: 0 4px 8px 0rgba(0,0,0,0.2);
     transform: 0.3s;
     border-radius: 5px; /* 5px rounder corners */
-}
+    
+    height: auto;
+    width: 500px;
 
-#woman {
-    width: 100px;
+    /* center the card */
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-bottom: 50px;
     
 }
 
+/* Adjust pictures in project card */
+#woman {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100px;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+.projectTitle {
+    text-align: center;
+}
+
+.projectTxt {
+    text-align: left;
+}
 /* on mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
