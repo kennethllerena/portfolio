@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(170, 205, 235);
+}
+
+.contact h3 {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid aqua;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    margin: 12px 0;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+.field .item::placeholder {
+    color: rgba(97, 96, 96, 0.815);
+}
+
+.field .error-text {
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+}
+
+form .textarea-field .error-text {
+    margin-top: -10px;
+
+}
+
+/* .formContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(26, 160, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+
+}
+
+form h3{
+    color: grey;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 30px;
+
+}
+
+form input, form textarea{
+
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color: rgb(223, 220, 220);
+    font-size: 16px;
+
+}
+
+form button{
+    padding: 15px;
+    background-color: salmon;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+} */

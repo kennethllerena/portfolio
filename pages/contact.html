@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/form.css">
+
     <style>
         h1 {
             text-align: center;
@@ -18,21 +20,87 @@
 
 </head>
 <body>
-    <div class="topnav">
-        <a href="../index.html">Home</a>
     
-        <div class="dropdown">
-            <a class="active" href="../pages/contact.html">Contact Me</a>
-            
-            <div>
-                <a class="content" href="../subpages/importContact.html">Import Contact</a>
+    <!-- The section portion relates to contact page and contact form -->
+    <!-- Div must be placed inside section to follow vertical center alignment -->
+    <section class="contact">
+
+        <!-- Top navbar with contact as the active tab -->
+        <div class="topnav">
+            <a href="../index.html">Home</a>
+
+            <!-- Dropdown for import contact tab -->
+            <div class="dropdown">
+                <a class="active" href="../pages/contact.html">Contact Me</a>
+                
+                <div>
+                    <a class="content" href="../subpages/importContact.html">Import Contact</a>
+                </div>
             </div>
+        
+            <a href="../pages/resume.html">Resume</a>
         </div>
     
-        <a href="../pages/resume.html">Resume</a>
-    </div>
+        <h1>Email Me!</h1>
+        <h2>Kenneth.llerena@outlook.com</h2>
+        <h3>Contact Me!</h3>
 
-    <h1>Email Me!</h1>
-    <h2>Kenneth.llerena@outlook.com</h2>
+        <!-- The entire form object -->
+        <form action="#">
+
+            <!-- User's Name and Email horizontal connection  -->
+            <div class="input-box">
+                <!-- User's name -->
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+                    <!-- Error message if form is not filled out -->
+                    <div class="error-txt">Name cannot be blank</div>
+                </div>
+
+                <!-- User's Email Address -->
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email"
+                    class="item" autocomplete="off">
+                    <!-- Error message if form is not filled out -->
+                    <div class="error-txt">Email cannot be blank</div>
+
+                </div>
+            </div>
+
+            <!-- Phone number and Subject fields connection horizontally -->
+            <div class="input-box">
+                <!-- User's Phone Number -->
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone"
+                    class="item" autocomplete="off">
+                    <!-- Error message if form is not filled out -->
+                    <div class="error-txt">Phone Number cannot be blank</div>
+                </div>
+
+                <!-- User's Subject -->
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject"
+                    class="item" autocomplete="off">
+                    <!-- Error message if form is not filled out -->
+                    <div class="error-txt">Subject cannot be blank</div>
+                </div>
+            </div>
+
+
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" 
+                placeholder="Your Message" class="item" 
+                autocomplete="off"></textarea>
+                <div class="error-txt">Message cannot be blank</div>
+
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+
+    </section>
+
 </body>
 </html>
