@@ -1,5 +1,5 @@
 :root {
-    --text-color: rgb(108, 179, 238);
+    --text-color: rgb(108, 179, 238); /* global text color var */
 }
 
 
@@ -41,10 +41,12 @@ form .input-box {
     justify-content: space-between;
 }
 
+/* Width of the input boxes  */
 .input-box .input-field {
     width: 48.5%;
 }
 
+/* Style for each individual box in the form */
 .field .item {
     width: 100%;
     padding: 18px;
@@ -57,22 +59,26 @@ form .input-box {
     margin: 12px 0;
 }
 
+/* Border color for when a form box is left blank/error */
 .field.error .item {
     border-color: rgb(206, 17, 17);
 }
 
+/* Style for place holder  */
 .field .item::placeholder {
     color: rgba(97, 96, 96, 0.815);
 }
 
+/* Style for error text  */
 .field .error-txt {
     font-size: 14.5px;
     color: red;
     text-align: left;
     margin: -5px 0 10px;
-    display: none;
+    display: none; /* Should not display unless there is an error */
 }
 
+/* Display error text when error occurs */
 .field.error .error-txt {
     display: block;
 }
