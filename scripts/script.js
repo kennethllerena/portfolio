@@ -15,15 +15,12 @@ function sendEmail() {
 
     Email.send({
         SecureToken: "cbe9bea9-333c-4f64-b2ca-4e05e2553ee6 ", //Individuals can't see credentials 
-        // Host : "smtp.elasticemail.com",
-        // Username : "jeanlkenneth@gmail.com",
-        // Password : "3A21FEA22C32366EC4B6A12CF192D395B099",
         To : 'jeanlkenneth@gmail.com',
         From : "jeanlkenneth@gmail.com",
         Subject : subject.value,
         Body : bodyMessage
 
-        // What happens after an email is sent
+    // What happens after an email is sent
     }).then(
       message => {
 
