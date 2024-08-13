@@ -31,13 +31,16 @@
 
             <!-- Dropdown for import contact tab -->
             <div class="dropdown">
+                <!-- Contact page in nav bar -->
                 <a class="active" href="../pages/contact.html">Contact Me</a>
                 
+                <!-- Import contact sub page in nav bar -->
                 <div>
                     <a class="content" href="../subpages/importContact.html">Import Contact</a>
                 </div>
             </div>
-        
+            
+            <!-- Resume page in nav bar -->
             <a href="../pages/resume.html">Resume</a>
         </div>
     
@@ -55,7 +58,7 @@
                     <input type="text" placeholder="Full Name" id="name"
                     class="item" autocomplete="off">
                     <!-- Error message if form is not filled out -->
-                    <div class="error-txt">Name cannot be blank</div>
+                    <div class="error-txt">*Name cannot be blank</div>
                 </div>
 
                 <!-- User's Email Address -->
@@ -63,7 +66,7 @@
                     <input type="text" placeholder="Email Address" id="email"
                     class="item" autocomplete="off">
                     <!-- Error message if form is not filled out -->
-                    <div class="error-txt">Email cannot be blank</div>
+                    <div class="error-txt email">*Email cannot be blank</div>
 
                 </div>
             </div>
@@ -75,7 +78,7 @@
                     <input type="text" placeholder="Phone Number" id="phone"
                     class="item" autocomplete="off">
                     <!-- Error message if form is not filled out -->
-                    <div class="error-txt">Phone Number cannot be blank</div>
+                    <div class="error-txt">*Phone Number cannot be blank</div>
                 </div>
 
                 <!-- User's Subject -->
@@ -83,24 +86,29 @@
                     <input type="text" placeholder="Subject" id="subject"
                     class="item" autocomplete="off">
                     <!-- Error message if form is not filled out -->
-                    <div class="error-txt">Subject cannot be blank</div>
+                    <div class="error-txt">*Subject cannot be blank</div>
                 </div>
             </div>
 
-
+            <!-- Where User can type their message -->
             <div class="textarea-field field">
                 <textarea name="" id="message" cols="30" rows="10" 
                 placeholder="Your Message" class="item" 
                 autocomplete="off"></textarea>
-                <div class="error-txt">Message cannot be blank</div>
-
+                <!-- Error message if form is not filled out -->
+                <div class="error-txt">*Message cannot be blank</div>
             </div>
 
+            <!-- Submit button -->
             <button type="submit">Send Message</button>
         </form>
 
 
     </section>
 
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
