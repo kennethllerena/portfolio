@@ -4,20 +4,29 @@
 
 
 * {
-    /* margin: 0;
-    padding: 0; */
+    
+    margin: 0;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 body{
     /* Use flex box to vertically center objects in body */
+    
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    /* align-items: center; */
+    /* min-height: 100vh; */
     background-color: rgb(255, 255, 255); /* Background color of page */
 
+}
+
+/* I have bug, suspecting its from having another css file
+Nav bar does not have proper spacing from top without
+directly styling in other css */
+.topnav {
+    margin-top: 8px;
 }
 
 /* Style for Contact Me! header */

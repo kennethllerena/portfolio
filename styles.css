@@ -1,14 +1,49 @@
+html {
+    height: 100%;
+}
 
 
-.myName {
-    text-align: center;
-    /* margin-top: auto;
-    margin-bottom: auto; */
-    /* margin-left: auto;
-    margin-right: auto;
-    display: flex; */
-    /* height: auto; */
+body {
+    background-image: linear-gradient(white,rgb(223, 239, 245), rgb(215, 241, 245), rgb(173, 214, 238));
+    
+    /* The following prevents the gradient background from being repeated on pages with minimal items */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: max-content; */
+}
+
+/* Picture of my face and where to style with relative positioning */
+#myFace {
+    /* display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto; */
+    position: relative;
     width: auto;
+    height: 500px;
+    /* transition: .5s; */
+}
+
+/* My name can be moved and styled here */
+.myName {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+    width: max-content;
+    color: grey;
+    
     /* border-style: dashed; */
 }
 
@@ -45,7 +80,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 /* Change the color of the links on hover */
@@ -155,7 +190,7 @@
 }
 
 /* Add some padding inside the card container */
-.container {
+.containerCard {
     padding: 2px 16px;
 
 }
