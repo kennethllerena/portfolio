@@ -1,0 +1,41 @@
+/* body {
+    /* display: flex;
+    justify-content: ;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+} */
+
+.phone {
+    width: 300px;
+    height: 600px;
+    border: 16px solid #333;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background: #fff;
+}
+
+.phone-screen {
+    width: 100%;
+    height: 80%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#contactList {
+    width: 100%;
+    padding: 20px;
+}
+
+input[type="file"] {
+    position: absolute;
+    bottom: 10px;
+    width: calc(100% - 20px);
+    left: 10px;
+}
